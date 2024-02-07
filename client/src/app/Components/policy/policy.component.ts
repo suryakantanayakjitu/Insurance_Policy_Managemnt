@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './policy.component.css'
 })
 export class PolicyComponent {
+  policies: any;
+viewPolicyDetails(arg0: any) {
+throw new Error('Method not implemented.');
+}
 
 }

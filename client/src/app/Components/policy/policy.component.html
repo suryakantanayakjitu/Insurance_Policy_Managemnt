@@ -1,1 +1,33 @@
-<p>policy works!</p>
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Policy List</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Description</th>
+              <th>Premium</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr *ngFor="let policy of policies"> -->
+            <tr *ngFor="let policy of policies">
+              <td>{{ policy.id }}</td>
+              <td>{{ policy.name }}</td>
+              <td>{{ policy.category }}</td>
+              <td>{{ policy.description }}</td>
+              <td>{{ policy.premium }}</td>
+              <td>
+                <button class="btn btn-primary" (click)="viewPolicyDetails(policy.id)">View Details</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
