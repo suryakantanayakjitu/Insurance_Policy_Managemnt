@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PolicyDetailsComponent } from './Components/policy-details/policy-details.component';
-import { PolicyComponent } from './Components/policy/policy.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
 
 const routes: Routes = [
-  {path:"policyDetails", component:PolicyDetailsComponent},
-  {path:"policy", component:PolicyComponent},
+  {path:"dashboard", component:DashboardComponent},
   // {path:"", component:NavbarComponent},
 ];
 

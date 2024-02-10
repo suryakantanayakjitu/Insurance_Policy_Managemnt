@@ -6,6 +6,7 @@ var Schema = mongoose.Schema;
 
 var PolicyListsModelSchema = new Schema(
     {   
+        PolicyId: Number,
         PolicyCategory: String,
         Premium: String
 

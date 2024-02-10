@@ -5,7 +5,8 @@ mongoose.connect('mongodb://127.0.0.1:27017/InsurancePolicy');
 var Schema = mongoose.Schema;
 
 var PolicyDetailsModelSchema = new Schema(
-    {   
+    {
+        PolicyId: Number,
         PolicyName: String,
         PolicyCategory: String,
         PolicyDescription: String,
